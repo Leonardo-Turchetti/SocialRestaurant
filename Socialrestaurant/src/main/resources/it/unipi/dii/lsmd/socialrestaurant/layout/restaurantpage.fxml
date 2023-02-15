@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+  This file is available and licensed under the following license:
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.lsmd.socialrestaurant.controller.RestaurantPage">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="510.0" prefWidth="700.0" styleClass="lite" stylesheets="@../style/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox prefHeight="56.0" prefWidth="799.0" styleClass="lite">
+                    <children>
+                        <Button fx:id="backIcon" mnemonicParsing="false" prefHeight="45.0" prefWidth="80.0">
+                            <graphic>
+                                <ImageView fitHeight="36.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/back.png" />
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </ImageView>
+                            </graphic>
+                            <styleClass>
+                                <String fx:value="buttonlog" />
+                                <String fx:value="dynamic-effect" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="52.0" prefWidth="789.0">
+                    <children>
+                        <Text fx:id="name" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="787.0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox prefHeight="82.0" prefWidth="777.0">
+                    <children>
+                        <VBox prefHeight="60.0" prefWidth="405.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="405.0">
+                                    <children>
+                                        <Label text="Cuisine:" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                        <Text fx:id="cuisine" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="cuisine" wrappingWidth="299.0000305175781" HBox.hgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="405.0">
+                                    <children>
+                                        <Label text="City:" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                        <Text fx:id="city" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="city" wrappingWidth="149.00003051757812" HBox.hgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="150.0">
+                            <children>
+                                <Text fx:id="likes" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="111" textAlignment="CENTER" wrappingWidth="75.00003051757812">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Text>
+                                <Label text="Likes" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+                            <children>
+                                <Text fx:id="comNum" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="111" textAlignment="CENTER" wrappingWidth="75.00003051757812">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Text>
+                                <Label text="Reviews" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="44.0" prefWidth="807.0">
+                    <children>
+                        <Button fx:id="bookingPage" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Booking Page">
+                            <styleClass>
+                                <String fx:value="buttonlog" />
+                                <String fx:value="dynamic-button" />
+                            </styleClass>
+                     <HBox.margin>
+                        <Insets right="90.0" />
+                     </HBox.margin>
+                        </Button>
+                        <Button fx:id="BookingBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Book a Table">
+                            <styleClass>
+                                <String fx:value="buttonlog" />
+                                <String fx:value="dynamic-button" />
+                            </styleClass>
+                        </Button>
+                        <Button fx:id="RestaurantListbtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="222.0" text="Add to Restaurant List">
+                            <HBox.margin>
+                                <Insets left="70.0" right="70.0" />
+                            </HBox.margin>
+                            <styleClass>
+                                <String fx:value="buttonlog" />
+                                <String fx:value="dynamic-button" />
+                            </styleClass>
+                        </Button>
+                        <Button fx:id="likebtn" mnemonicParsing="false" text="Unlike">
+                            <styleClass>
+                                <String fx:value="buttonlog" />
+                                <String fx:value="dynamic-button" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            <HBox fx:id="bookingDate" alignment="CENTER" prefHeight="46.0" prefWidth="808.0">
+               <children>
+                  <DatePicker fx:id="dateBooking" />
+                   <Button fx:id="reserveTable" mnemonicParsing="false" prefHeight="30.0" prefWidth="103.0" text="Reserve">
+                       <HBox.margin>
+                           <Insets left="50.0" />
+                       </HBox.margin>
+                       <styleClass>
+                           <String fx:value="buttonlog" />
+                           <String fx:value="dynamic-button" />
+                       </styleClass>
+                   </Button>
+                  <Button fx:id="deleteRestaurant" alignment="CENTER" mnemonicParsing="false" text="Delete">
+                     <HBox.margin>
+                        <Insets left="160.0" right="-200.0" />
+                     </HBox.margin>
+                      <styleClass>
+                          <String fx:value="buttonlog" />
+                          <String fx:value="dynamic-button" />
+                      </styleClass>
+                  </Button>
+               </children></HBox>
+            <Label fx:id="errorTf" alignment="CENTER" prefHeight="17.0" prefWidth="557.0" text="Label">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+            <HBox prefHeight="31.0" prefWidth="805.0">
+               <children>
+                  <Label fx:id="boxLabel" prefHeight="27.0" prefWidth="122.0" text="Review List:">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+                <ScrollPane prefHeight="285.0" prefWidth="808.0">
+                    <content>
+                        <VBox fx:id="reviewsBox" alignment="TOP_CENTER" prefHeight="104.0" prefWidth="770.0">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </VBox>
+                    </content>
+                    <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </ScrollPane>
+                <HBox prefHeight="39.0" prefWidth="800.0">
+               <children>
+                        <TextField fx:id="commentText" prefHeight="30.0" prefWidth="700.0" promptText="Write your opinion..." />
+                        <Button fx:id="review" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="Review">
+                            <styleClass>
+                                <String fx:value="buttonlog" />
+                                <String fx:value="dynamic-button" />
+                            </styleClass>
+                        </Button>
+               </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

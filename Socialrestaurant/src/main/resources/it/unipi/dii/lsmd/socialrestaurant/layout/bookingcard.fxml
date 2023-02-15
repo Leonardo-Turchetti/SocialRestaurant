@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="bookingBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="129.0" prefWidth="702.0" stylesheets="@../style/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.lsmd.socialrestaurant.controller.BookingCtrl">
+    <children>
+        <VBox prefHeight="140.0" prefWidth="805.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 5;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="cancelBookingBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="96.0" text="Cancel">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <styleClass>
+                                <String fx:value="buttonlog" />
+                                <String fx:value="dynamic-button" />
+                            </styleClass>
+                     <HBox.margin>
+                        <Insets right="160.0" />
+                     </HBox.margin>
+                        </Button>
+                  <Text fx:id="timestamp" strokeType="OUTSIDE" strokeWidth="0.0" text="Timestamp">
+                     <HBox.margin>
+                        <Insets right="150.0" />
+                     </HBox.margin>
+                  </Text>
+                        <Label fx:id="analyticLabelName" prefHeight="18.0" prefWidth="122.0" text="AnalyticLabelName">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding></Label>
+                        <Text fx:id="analyticValue" strokeType="OUTSIDE" strokeWidth="0.0" text="AnalyticValue" wrappingWidth="78.484375">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="660.0">
+               <children>
+                      <Label fx:id="restaurantName" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="358.0" styleClass="dynamic-effect" text="Name" underline="true">
+                          <cursor>
+                              <Cursor fx:constant="HAND" />
+                          </cursor>
+                          <font>
+                              <Font name="System Bold" size="16.0" />
+                          </font>
+                          <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                          </padding>
+                      </Label>
+                  <Label fx:id="userName" styleClass="dynamic-effect" text="User" textAlignment="RIGHT" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Label alignment="TOP_LEFT" prefHeight="20.0" prefWidth="50.0" text="City:" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Text fx:id="city" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="129.6963074207306">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="585.0" spacing="10.0">
+                    <children>
+                        <Label text="Cuisine:">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Text fx:id="cuisine" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuisine" wrappingWidth="148.36620712280273">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+    <styleClass>
+        <String fx:value="shadow" />
+        <String fx:value="lite" />
+        <String fx:value="card" />
+    </styleClass>
+</AnchorPane>

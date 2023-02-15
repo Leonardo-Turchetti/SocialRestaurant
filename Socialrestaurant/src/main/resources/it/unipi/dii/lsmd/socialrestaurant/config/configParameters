@@ -1,0 +1,13 @@
+mongoFirstIp = 10.1.1.23
+mongoFirstPort = 27017
+mongoSecondIp = 10.1.1.22
+mongoSecondPort = 27017
+mongoThirdIp = 10.1.1.21
+mongoThirdPort = 27017
+mongoUsername =
+mongoPassword =
+mongoDbName = SocialRestaurant
+neo4jIp = 10.1.1.23
+neo4jPort = 7687
+neo4jUsername = neo4j
+neo4jPassword = root

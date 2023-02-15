@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="restaurantListObjectBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="702.0" stylesheets="@../style/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.lsmd.socialrestaurant.controller.RestaurantListObjectCtrl">
+    <children>
+        <VBox prefHeight="140.0" prefWidth="805.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="660.0">
+                    <children>
+                  <Text fx:id="timestamp" strokeType="OUTSIDE" strokeWidth="0.0" text="Timestamp" textAlignment="CENTER" wrappingWidth="109.13670659065247">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </Text>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="662.0" style="-fx-spacing: 5;" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="removeRestaurantBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Remove">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <styleClass>
+                                        <String fx:value="buttonlog" />
+                                        <String fx:value="dynamic-button" />
+                                    </styleClass>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <Label fx:id="restaurantName" alignment="TOP_LEFT" prefHeight="45.0" prefWidth="809.0" styleClass="dynamic-effect" text="Name" underline="true">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                      <Label alignment="TOP_LEFT" prefHeight="20.0" prefWidth="50.0" text="City:" textAlignment="CENTER">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                  <Text fx:id="city" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="127.69630742073059">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="585.0" spacing="10.0">
+                    <children>
+                        <Label text="Cuisine:">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Text fx:id="cuisine" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuisine" wrappingWidth="126.36620712280273">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+    <styleClass>
+        <String fx:value="shadow" />
+        <String fx:value="lite" />
+        <String fx:value="card" />
+    </styleClass>
+</AnchorPane>
